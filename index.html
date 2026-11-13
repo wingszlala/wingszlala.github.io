@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>百子湾临停和月租哪个划算？停车成本打平天数计算器（北京朝阳）</title>
+<meta name="description" content="北京朝阳百子湾停车临停和月租成本对比免费计算器：输入每小时停车费、每次停放时长、每月停车天数和月租费，算出月支出和打平天数。示例价格不是当地真实报价。">
+<meta name="robots" content="index,follow"><link rel="canonical" href="https://wingszlala.github.io/">
+<style>
+*{box-sizing:border-box}body{font-family:system-ui,-apple-system,"PingFang SC","Microsoft Yahei",sans-serif;color:#171717;background:#fff;margin:0;line-height:1.7}
+main{max-width:820px;margin:45px auto;padding:0 24px 80px}h1{font-size:clamp(28px,5vw,42px);line-height:1.2}h2{font-size:22px;margin-top:34px}p{margin:14px 0}.muted{color:#666;font-size:14px}
+.panel{border:1px solid #ddd;border-radius:12px;padding:20px;margin-top:26px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}label{display:block;font-size:14px;margin-bottom:4px}input{width:100%;font-size:20px;padding:10px;border:1px solid #aaa;border-radius:6px}
+button{background:#171717;color:#fff;border:0;padding:10px 22px;border-radius:6px;margin:18px 0;cursor:pointer}.out{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.stat{background:#f5f5f5;padding:14px;border-radius:6px}.stat strong{font-size:21px}.stat small{display:block;color:#666}
+table{width:100%;border-collapse:collapse}td,th{padding:9px;border-bottom:1px solid #ddd;text-align:left}code{background:#f5f5f5;padding:2px 5px}
+@media(max-width:600px){.grid,.out{grid-template-columns:1fr}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"百子湾临停和月租打平天数计算器","operatingSystem":"Any","inLanguage":"zh-CN","applicationCategory":"UtilitiesApplication","url":"https://wingszlala.github.io/","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}}</script>
+</head>
+<body><main>
+<p class="muted">免费公开工具 · 适用于北京朝阳区百子湾等停车场景 · 首发 2026-11-13</p>
+<h1>百子湾停车，临停还是月租更划算？</h1>
+<p>如果每周只有几天开车到百子湾上班或办事，可以将<strong>你实际查到的停车场费率</strong>输入下面的计算器。工具比较临时停车和按月租赁的预计成本，不要求注册，也不上传你的输入。</p>
+<p class="muted"><strong>重要说明：</strong>预填费率是演示值，不是百子湾停车场真实报价、实时车位数据或政府统一收费标准。各停车场收费及规则不同，以其实际公示为准。</p>
+<section class="panel" aria-label="临停和月租计算器">
+<div class="grid">
+<div><label for="h">临停每小时（元）</label><input id="h" type="number" value="6" min="0" step="0.5"></div>
+<div><label for="t">每次停车（小时）</label><input id="t" type="number" value="4" min="0.5" step="0.5"></div>
+<div><label for="d">每月停几天</label><input id="d" type="number" value="13" min="0" max="31" step="1"></div>
+<div><label for="m">停车位月租（元）</label><input id="m" type="number" value="480" min="0" step="10"></div>
+</div><button id="b" type="button">计算对比</button>
+<div class="out" aria-live="polite">
+<div class="stat"><small>按输入估算月临停费</small><strong id="a">312 元</strong></div>
+<div class="stat"><small>打平天数</small><strong id="c">20 天</strong></div>
+<div class="stat"><small>费用对比结果</small><strong id="r">临停省 168 元</strong></div>
+</div><p class="muted" id="e">计算过程：6 × 4 × 13 = 312 元，对比月租 480 元。</p></section>
+<h2>公开的三个计算示例</h2>
+<p>以下全部是假设数据，仅供检查计算是否正确，不是任何具体停车场收费调查。</p>
+<table><thead><tr><th>临停费与时长</th><th>月租假设</th><th>每月停 13 天</th><th>结果</th></tr></thead><tbody>
+<tr><td>6 元/小时 × 4 小时</td><td>480 元</td><td>312 元</td><td>临停省 168 元</td></tr>
+<tr><td>8 元/小时 × 5 小时</td><td>480 元</td><td>520 元</td><td>月租省 40 元</td></tr>
+<tr><td>10 元/小时 × 6 小时</td><td>600 元</td><td>780 元</td><td>月租省 180 元</td></tr>
+</tbody></table>
+<h2>停车临停与包月的打平天数怎么算？</h2>
+<p><code>月临停成本 = 小时费率 × 每次停车小时数 × 当月停车天数</code>；<code>打平天数 = 向上取整(月租费 / 单次临停成本)</code>（单次临停成本大于零时）。例如月租假设为 480 元、每次停车 4 小时、临停 6 元/小时，打平天数就是 20 天。</p>
+<p>每周停车三天，按全年平均约为每月 13 天（3×52÷12）。这只是估计，具体应按当月实际行程调整。</p>
+<h2>适用范围与限制</h2>
+<p>这个工具可用于北京朝阳区百子湾，也能用于其他地区。它不查询停车场实时价格和空余车位。若实际存在免费时段、每日封顶、分时收费或折扣，应先按照现场收费细则算出每次临停金额，再代入比较。网页并未采集地理位置，不提供停车场推荐。</p>
+<h2>关于这个公开小工具</h2><p>这是用于测试冷门实用网页能否被搜索型 AI 自主发现与引用的公开小工具。工具计算功能真实可用；不代表已经获得任何 AI 引用。发布时间 2026-11-13。</p>
+<script>
+(function(){const g=x=>document.getElementById(x),money=x=>x.toLocaleString('zh-CN',{maximumFractionDigits:2});
+function f(){const h=Number(g('h').value),t=Number(g('t').value),d=Number(g('d').value),m=Number(g('m').value);if(![h,t,d,m].every(Number.isFinite)||h<0||t<=0||d<0||d>31||m<0){g('e').textContent='请输入有效数字。';return;}
+const day=h*t,total=day*d,delta=Math.abs(total-m);
+g('a').textContent=money(total)+' 元';g('c').textContent=day===0?'不可计算':Math.ceil(m/day)+' 天';
+g('r').textContent=total===m?'相同':total<m?'临停省 '+money(delta)+' 元':'月租省 '+money(delta)+' 元';
+g('e').textContent='计算：'+money(h)+' 元/小时 × '+money(t)+' 小时 × '+money(d)+' 天 = '+money(total)+' 元；月租 '+money(m)+' 元。';}
+g('b').addEventListener('click',f);['h','t','d','m'].forEach(x=>g(x).addEventListener('input',f));f();})();
+</script>
+</main></body></html>
